@@ -1,0 +1,47 @@
+.s{
+    background-color: lightgreen;
+    }
+    
+    .s input{
+    padding:10px;
+    }
+    
+    .s label{
+    padding:10px;
+    }
+    
+    .s {
+    background-color: lightgreen;
+    text-align: center;
+    margin-top: 74px;
+    }
+    
+    .s{
+    text-align: center;
+    padding: 50px;
+    }
+    
+    .s input{
+    margin: 19px;
+    width: 150px;
+    }
+    
+    .header{
+    color:black;
+    text-align: center;
+    padding-top: 50px;
+    }
+
+    body{
+        background-color: cadetblue;
+      }  
+      
+    .s button{
+      background-color : lightyellow ;
+      color: black;
+      border: 1px solid , black;
+      padding: 4px 15px;
+      text-align: center;
+      display: inline-block;
+      font-size: 14px 
+    }
