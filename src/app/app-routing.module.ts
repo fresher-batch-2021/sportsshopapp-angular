@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { ListtaskComponent } from './listtask/listtask.component';
 import { CricketComponent } from './cricket/cricket.component';
 import { RegisterComponent } from './register/register.component';
+import { FootballComponent } from './football/football.component';
 
 
 const Routes: Routes = [
@@ -13,6 +14,7 @@ const Routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'listtask',component:ListtaskComponent},
   {path:'cricket',component:CricketComponent},
+  {path:'football',component:FootballComponent},
   {path:'', redirectTo:'home', pathMatch:'full'},
 ];
 

@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { ListtaskComponent } from './listtask/listtask.component';
 import { FormsModule } from '@angular/forms';
 import { CricketComponent } from './cricket/cricket.component';
+import { FootballComponent } from './football/football.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { CricketComponent } from './cricket/cricket.component';
     RegisterComponent,
     LoginComponent,
     ListtaskComponent,
-    CricketComponent
+    CricketComponent,
+    FootballComponent
 
   ],
   imports: [
