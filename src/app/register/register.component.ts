@@ -21,21 +21,21 @@ login(){
     alert("Name Cannot blank");
   }
 
-  if(this.email==""){
+  else if(this.email==""){
     alert("Email Cannot Blank");
   }
   
-  if(this.pwd.length<8){
+  else if(this.pwd.length<5){
     alert("cannot blank");
   }
 
-  if(this.pwd!=this.cpwd){
+  else if(this.pwd!=this.cpwd){
     alert("Wrong Password");
   }
 
   else{
     alert("successfull");
-    window.location.href="listtask";
+    window.location.href="login";
   }
   }
 
