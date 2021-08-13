@@ -4,12 +4,12 @@
 
   <div class="s">
     <form (ngSubmit)="login()">
-      <label for="name">Name:</label>
-      <input type="name" id="name" placeholder="Enter name" name="name" [(ngModel)]="name">
+      <label for="email">Name:</label>
+      <input type="email" [(ngModel)]="email" id="email" placeholder="Enter name" name="email" >
       <br>
 
       <label for="password">Password:</label>
-      <input type="password" id="pswd" placeholder="Enter password" name="pwd"  [(ngModel)]="pwd">
+      <input type="password" [(ngModel)]="pwd" id="pwd" placeholder="Enter password" name="pwd"  >
       <br>
 
       <button type="submit">Submit</button>

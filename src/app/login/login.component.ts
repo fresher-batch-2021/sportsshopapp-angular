@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import axios from 'axios';
 
 @Component({
   selector: 'app-login',
@@ -11,18 +12,32 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-name:string = ""; 
+email:string = ""; 
 pwd:string = "";
 
 login(){
-  if(this.name==""){
+  if(this.email==""){
     alert("name cannot blank");
   }else if(this.pwd.length<8){
     alert("cannot blank");
 
   }else{
-    alert("successfull");
-    window.location.href="listtask";
+    let url = "https://product-mock-api.herokuapp.com/sportsshopapp/api/v1/auth/login";
+    let formData = {
+      email: this.email,
+      pwd: this.pwd
+    }
+
+    axios.post(url, formData).then(res => {
+      let data = res.data;
+      console.log(data);
+      alert("Successffully Login");
+      window.location.href = "listTask"
+    }).catch(err => {
+      let errorMessage = err.response.data.errorMessage;
+      console.error(errorMessage);
+      alert("Error-" + errorMessage);
+    });
   }
   
 }
